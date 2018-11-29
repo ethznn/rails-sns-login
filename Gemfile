@@ -42,6 +42,7 @@ gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 # Sns Login
 gem 'omniauth'
 gem 'omniauth-naver'
+gem 'omniauth-kakao', :git => 'git://github.com/hcn1519/omniauth-kakao'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -5,6 +5,8 @@
 Devise.setup do |config|
 
   config.omniauth :naver, Rails.application.credentials.naver_client_id, Rails.application.credentials.naver_client_secret
+  config.omniauth :kakao, Rails.application.credentials.kakao_key, :redirect_path => "/users/auth/kakao/callback"
+  
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
